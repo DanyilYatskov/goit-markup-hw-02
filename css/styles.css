@@ -16,27 +16,31 @@
   --adress-links-text-color: rgba(255, 255, 255, 0.6);
   --crew-background-color: #f5f4fa;
 }
-.links {
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--page-background-color);
+}
+.link {
   text-decoration: none;
 }
 .list {
   list-style: none;
 }
-body {
-  color: var(--main-text-color);
-  background-color: var(--page-background-color);
+.title {
+  color: var(--secondary-text-color);
 }
 
 /* Header Styles */
 .logo {
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 .logo-web {
   color: var(--emphasis-color);
 }
 .site-nav .link {
   color: var(--secondary-text-color);
-  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -44,7 +48,6 @@ body {
 }
 .adress-nav .link {
   color: var(--main-text-color);
-  text-decoration: none;
 }
 .adress-nav .link:hover,
 .adress-nav .link:focus {
@@ -63,9 +66,45 @@ body {
 }
 .footer-adress-nav .link {
   color: var(--adress-links-text-color);
-  text-decoration: none;
 }
 .footer-adress-nav .link:hover,
 .footer-adress-nav .link:focus {
+  color: var(--emphasis-color);
+}
+
+/* Hero section styles */
+.hero {
+  background-color: var(--hero-background-color);
+}
+.hero-title {
+  color: var(--hero-title-color);
+}
+.hero .link {
+  color: var(--hero-title-color);
+}
+.hero .link:hover,
+.hero .link:focus {
+  color: var(--emphasis-color);
+}
+
+/* Features section styles */
+.features .title {
+}
+.features .text {
+}
+
+/* Portfolio.html personal styles */
+.our-projects-nav .link {
+  color: var(--secondary-text-color);
+}
+.our-projects-nav .link:hover,
+.our-projects-nav .link:focus {
+  color: var(--emphasis-color);
+}
+.our-projects-list .text {
+  color: var(--main-text-color);
+}
+.our-projects-list .link:hover,
+.our-projects-list .link:focus {
   color: var(--emphasis-color);
 }
